@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+   background-color: rgba(0, 0, 0, 0.623);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+    
+}
+#cinemax1{
+    text-shadow: 3px 3px  3px black
+}
+header{
+
+   min-height:12vh;
+   background-color: #000000d3;
+   position: fixed;
+   width: 100%;
+   z-index: 1;
+}
+main {
+    min-height: 100vh;
+    
+    background-image: url(img/7fd46d4a70b2df4e62096e73f39ecedf.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    max-width: 100%;
+
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+
+}
+.logo {
+    color:#fffafe86;
+    font-size: 25px;
+    text-transform:  uppercase;
+}
+.navbar ul {
+    display: flex;
+    align-items: center;
+    
+
+}
+.navbar ul li {
+    padding: 0 20px;
+    font-size: 20px;
+
+}
+.navbar ul li a {
+    color: rgb(245, 245, 245);
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    transition: 0.5s;
+   
+}
+.navbar ul li a:hover {
+    color: #ff00009d;
+    transform: scale(1.2);
+
+}
+#menu {
+    display: none;
+}
+.menu-icono {
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+     
+}
+.header-content {
+    display: flex;
+    margin-top: 0px;
+ 
+
+}
+.header-txt {
+    flex-basis: 50%;
+    padding-right: 120px;
+}
+
+.header-txt h1 {
+    font-family: 'Bebas Neve', sans-serif;
+    font-size: 100px;
+    line-height: 1;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+.header-txt p {
+    font-size: 20px;
+    color: #fff6f6;
+    margin-bottom: 50px;
+
+}
+.btn {
+    display: inline-block;
+    padding: 13 px  30px ;
+    background: linear-gradient(
+        90deg
+        rgb(233, 231, 233)0%
+        rgb(240, 240, 240)100%
+    );
+    color: #FFFFFf;
+    font-size: 18px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0,2);
+
+}
+.header-img {
+    flex-basis: 50%;
+
+}
+@media(max-widh:991px){
+    .menu {
+        padding: 20px;
+        position: relative;
+    }
+    .menu label {
+        display: initial;
+
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #bdb6bb;
+        display: none;
+    }
+    .menu .navbar ul {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+        padding: 20px 0;
+    }
+    .menu .navbar ul li a:hover {
+        color:#1f0c42;
+    }
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    .header-content {
+      padding: 30px;
+      margin-top: 0;
+      flex-direction: column;
+      text-align: center;
+    }
+    .header-txt {
+        padding: 0 0 40ox 0;
+
+    }
+    .header-img img {
+        width: 300px;
+    }
+}
+section{
+    margin-left: 250px;
+    margin-top: 100px;
+    display: flex;
+    width: 800px;
+    height: 430px;
+
+}
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+section img:hover{
+cursor:pointer;
+width: 300px;
+opacity: 1;
+filter: contrast(120%);
+
+}
+.info9 {
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    opacity: .4;
+    text-shadow: 3px 3px 3px black;
+    margin-right: 1050PX;
+    font-family: cursive;
+    color: black;
+}
+.info9:hover{
+    cursor: pointer;
+    opacity: 2;
+    
+}
+.buttons {
+  
+    margin-left: 20%;
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+  }
+  
+  .buttons a:hover {
+    transform: scale(1.2);
+  }
+  H2 {
+    color: #f1f1f1;
+    text-shadow: 3px 3px 3px  black;
+    transition: 0.5s;
+  }
+  h2:hover {
+transform: matrix3d(1,2);
+color: red;
+  }
+  .rr{
+    color: #f1f1f1;
+    text-shadow:3px 3px 3px black;
+  }
+  .bebe {
+    background-color: #3a2d2d9d;
+    transition: 0.5s;
+  }
+  .bebe:hover{
+    transform: rotate(1,2);
+    background-color: #000000;
+    cursor: pointer;
+  }
